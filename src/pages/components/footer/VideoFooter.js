@@ -1,5 +1,6 @@
 import React from "react";
 import "./videoFooter.css";
+import EqualizerIcon from '@mui/icons-material/Equalizer';
 
 function VideoFooter() {
   return (
@@ -8,8 +9,10 @@ function VideoFooter() {
         <h3>@Laramaoly</h3>
         <p>Descrição do Vídeo</p>
         <div className="videoFooter__music">
-          <p>Icone</p>
-          <p>Título da musica</p>
+          <EqualizerIcon className="videoFooter__icon" />
+          <div className="videoFooterMusic__text">
+            <p>Título da musica</p>
+          </div>
         </div>
       </div>
       <img

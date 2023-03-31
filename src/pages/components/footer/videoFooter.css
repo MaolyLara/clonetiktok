@@ -17,6 +17,19 @@
     display: flex;
 }
 
+.videoFooter__icon{
+    /*animation: moveTheIcon 5s infinite linear; */  
+}
+
+.videoFooterMusic__text{
+    width: 80%;
+    overflow-x: hidden; 
+}
+
+.videoFooterMusic__text p{
+    animation: moveTheText 3s infinite linear;
+}
+
 .videoFooter__record{
     animation: spinTheRecord 5s infinite linear;
     position: absolute;
@@ -26,7 +39,7 @@
     filter: invert(1);
 }
 
-@keyfremes spinTheRecord {
+@keyframes spinTheRecord {
     0%{
         transform: rotate(0deg);
     }
@@ -34,3 +47,21 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes moveTheText {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/*@keyframes moveTheIcon {
+    0%{
+        scale: revert(100%);
+    }
+    100%{
+        scale: revert(-100%);
+    }
+}*/
