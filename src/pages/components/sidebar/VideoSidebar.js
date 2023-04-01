@@ -5,7 +5,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ChatIcon from '@mui/icons-material/Chat';
 import ShareIcon from '@mui/icons-material/Share';
 
-function VideoSidebar() {
+function VideoSidebar(likes, messages, shares) {
 
     const [liked, setLiked] = useState(false)
 
@@ -20,15 +20,15 @@ function VideoSidebar() {
         onClick={handdleLike}
       >
         {liked ? <FavoriteIcon fonteSize='large'/> : <FavoriteBorderIcon  fonteSize='large'/>}
-        <p> {liked ? 800 + 15 : 800}</p>
+        <p> {liked ? likes + 15 : likes}</p>
       </div>
       <div className='videoSidebar_options'>
         <ChatIcon fonteSize='large'/>
-        <p>600</p>
+        <p>{messages}</p>
       </div>
       <div className='videoSidebar_options'>
         <ShareIcon fonteSize='large'/>
-        <p>100</p>
+        <p>{shares}</p>
       </div>
     </div>
   ) 
