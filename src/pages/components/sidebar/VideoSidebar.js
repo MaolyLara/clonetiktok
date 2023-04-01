@@ -20,7 +20,7 @@ function VideoSidebar() {
         onClick={handdleLike}
       >
         {liked ? <FavoriteIcon fonteSize='large'/> : <FavoriteBorderIcon  fonteSize='large'/>}
-        <p> {liked ? 800 + 1 : 300}</p>
+        <p> {liked ? 800 + 15 : 800}</p>
       </div>
       <div className='videoSidebar_options'>
         <ChatIcon fonteSize='large'/>
