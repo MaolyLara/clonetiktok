@@ -3,7 +3,7 @@ import VideoFooter from "./components/footer/VideoFooter";
 import VideoSidebar from "./components/sidebar/VideoSidebar";
 import "./video.css";
 
-function Video( likes, messages, shares) {
+function Video( likes, messages, shares, name, description, music, url) {
     const videoRef = useRef(null);
     const [play, setPlay] = useState(false);
 
@@ -24,14 +24,18 @@ function Video( likes, messages, shares) {
                 ref={videoRef}
                 onClick={handdleStart}
                 loop
-                src="https://firebasestorage.googleapis.com/v0/b/jornadadevtr.appspot.com/o/WhatsApp%20Video%202023-03-29%20at%2020.04.52.mp4?alt=media&token=db4be029-27cc-4af9-b75d-3ce5fd1b1fe2"
+                src={url}
             ></video>
             <VideoSidebar
                 likes={likes}
                 messages={messages}
                 shares={shares}
             />
-            <VideoFooter/>
+            <VideoFooter
+                name={name}
+                description={description}
+                music={music}
+            />
         </div>
     );
 }
