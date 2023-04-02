@@ -13,7 +13,7 @@ function App() {
           name="Paulo"
           description= "Brecker o Goleiro" 
           music="musica épica" 
-          url= "https://firebasestorage.googleapis.com/v0/b/jornadadevtr.appspot.com/o/WhatsApp%20Video%202023-03-29%20at%2020.04.52.mp4?alt=media&token=db4be029-27cc-4af9-b75d-3ce5fd1b1fe2"     
+          url= "https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/brecker2.mp4"     
         />
         <Video
           likes={362}
@@ -22,7 +22,7 @@ function App() {
           name="Maoly"
           description= "Gato Pulando" 
           music="musica" 
-          url= "https://firebasestorage.googleapis.com/v0/b/jornadadevtr.appspot.com/o/WhatsApp%20Video%202023-03-29%20at%2020.04.52.mp4?alt=media&token=db4be029-27cc-4af9-b75d-3ce5fd1b1fe2"           
+          url= "https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/bird.mp4"           
         />
       </div>      
     </div>
